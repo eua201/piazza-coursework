@@ -1,16 +1,16 @@
-\# Development Log 
+# Development Log
 
 
 
-\## Milestone 1: Initial Setup
+## Milestone 1: Initial Setup
 
 
 
-\*\*Date:\*\* 2 November 2026
+**Date:** 2 November 2026
 
 
 
-\*\*Work completed:\*\*
+**Work completed:**
 
 Today I set up my repo, my app and tests folders and my virtual environment. I installed packages into the venv, created requirements.txt with pinned versions. I also edited the README.
 
@@ -18,7 +18,7 @@ Today I set up my repo, my app and tests folders and my virtual environment. I i
 
 
 
-\*\*Key decisions or problems:\*\*
+**Key decisions or problems:**
 
 I was often in the wrong folder for the command I was trying to execute, tried setting up venv from projects instead of inside the repo. While setting up the venv I put a space in between - and m and slipped into the python prompt, Python alerted me to this when I tried to activate the environment. I used Claude to debug the terminal output.
 
@@ -36,19 +36,19 @@ I decided to put the repo on my personal account so as to begin building my port
 
 
 
-\*\*Commits:\*\*
+**Commits:**
 
-TBC
-
-
+https://github.com/eua201/piazza-coursework/commit/f6068ab8df6157c0618425479131aa1bd350e175
 
 
 
-\*\*Sources and Assistance:\*\*
+
+
+**Sources and Assistance:**
 
 
 
-The teaching material for example class 1's README has : 
+The teaching material for example class 1's README has :
 
 "Open a new project folder in VS Code.
 
@@ -62,13 +62,9 @@ Install fastapi and uvicorn."
 
 
 
-Up to this point that has been instructive. Additionally the assignment's README has been instructive. 
+Up to this point that has been instructive. Additionally the assignment's README has been instructive.
 
 
 
 02/11 - I've used Claude to create colourful slides to understand the brief and summarise where I could lose/ gain marks e.g e.g making sure the requirements had pinned versions to satisfy D1 and D2.  I've used it for explanations around (venv, requirements, Docker, GCP) checking spelling and grammar in log. No code was generated.
-
-
-
-
 
