@@ -7,13 +7,22 @@
 
 #WHERE THE INFORMATION IS KEPT - MODEL CLASS REPRESENTS TABLE
 from datetime import datetime, timezone
-from sqlalchemy import Column, ForeignKey, Integer, String, Text, UniqueConstraint,DateTime
+from sqlalchemy import Column, ForeignKey, Integer, String, Text, UniqueConstraint,DateTime,select
 from sqlalchemy.orm import relationship
+from app.database import Base,engine,get_db,SessionLocal
 import enum
-from app.database import Base
 
 def utc_now():
     return datetime.now(timezone.utc).replace(tzinfo=None)
+#START UP CODE
+# All four topics inserted into topics tabel when app starts if missing.
+def seed_topics()->None:
+    with SessionLocal() as db:
+        existing = set(db.scalars(select(Topic.name)).all())
+        for name in TopicName:
+            if name.value not in existing:
+                db.add(Topic(name=name.value))
+        db.commit()
 
 class TopicName(str, enum.Enum):
     POLITICS = "Politics"
